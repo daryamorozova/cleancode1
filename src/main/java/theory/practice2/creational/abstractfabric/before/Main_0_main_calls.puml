@@ -1,0 +1,194 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "theory.practice2.creational.abstractfabric.before.Main#main(String[])",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "theory.practice2.creational.abstractfabric.before.Main",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1373716298 { 
+   	label=creational
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1835886187 { 
+   	label=abstractfabric
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1097163398 { 
+   	label=WindowsCheckbox
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   WindowsCheckbox500341794XXXpaint0[
+	label="+ paint()"
+	style=filled
+	fillcolor=white
+	tooltip="WindowsCheckbox
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_639654949 { 
+   	label=Main
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Main500341794XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="Main
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_729066153 { 
+   	label=WindowsButton
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   WindowsButton500341794XXXpaint0[
+	label="+ paint()"
+	style=filled
+	fillcolor=white
+	tooltip="WindowsButton
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_796321942 { 
+   	label=MacOSCheckbox
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MacOSCheckbox500341794XXXpaint0[
+	label="+ paint()"
+	style=filled
+	fillcolor=white
+	tooltip="MacOSCheckbox
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_899211417 { 
+   	label=MacOSButton
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MacOSButton500341794XXXpaint0[
+	label="+ paint()"
+	style=filled
+	fillcolor=white
+	tooltip="MacOSButton
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+Main500341794XXXmain1859653459 -> MacOSButton500341794XXXpaint0;
+Main500341794XXXmain1859653459 -> MacOSCheckbox500341794XXXpaint0;
+Main500341794XXXmain1859653459 -> WindowsButton500341794XXXpaint0;
+Main500341794XXXmain1859653459 -> WindowsCheckbox500341794XXXpaint0;
+    
+}
+@enduml
